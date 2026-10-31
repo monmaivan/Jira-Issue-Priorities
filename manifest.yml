@@ -1,0 +1,21 @@
+modules:
+  jira:issuePanel:
+    - key: jira-issue-priorities-hello-world-issue-panel
+      resource: main
+      resolver:
+        function: resolver
+      render: native
+      title: Jira-Issue-Priorities
+      icon: https://developer.atlassian.com/platform/forge/images/icons/issue-panel-icon.svg
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: src/frontend/index.jsx
+app:
+  runtime:
+    name: nodejs24.x
+    memoryMB: 256
+    architecture: arm64
+  id: ari:cloud:ecosystem::app/6a9aa537-8e1d-4a1a-ac48-d43eaa4a45a6
