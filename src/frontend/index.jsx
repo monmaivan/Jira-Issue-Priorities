@@ -9,8 +9,18 @@ const App = () => {
   }, []);
   return (
     <>
-      <Text>Hello world!</Text>
-      <Text>{data ? data : 'Loading...'}</Text>
+       <Text>PRIORITY: HIGH</Text>
+      <Text>- Notify the on-call engineer immediately.</Text>
+      <Text>- Escalate in the #support-priority Slack channel.</Text>
+      <Text>- Update the customer within 1 hour.</Text>
+
+      <Text>PRIORITY: MEDIUM</Text>
+      <Text>- Assign the issue to a senior engineer.</Text>
+      <Text>- Provide an initial response within 2 hours.</Text>
+
+      <Text>PRIORITY: LOW</Text>
+      <Text>- Add relevant logs or screenshots.</Text>
+      <Text>- Update status within 1 business day.</Text>
     </>
   );
 };
